@@ -8,6 +8,7 @@ def index():
     return render_template("index.html", status=True)
 
 
+# Use special routes for debugging
 @app.route("/status/<on_off>")
 def status(on_off):
     if on_off == "1":
