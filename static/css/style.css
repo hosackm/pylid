@@ -1,0 +1,11 @@
+#project-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p#light-status.bg-success{
+  font-family: 'Pacifico', cursive;
+}
+
+p#light-status.bg-danger{
+  font-family: "Rock Salt", cursive;
+}

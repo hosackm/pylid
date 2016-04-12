@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-3">
+    <img src="/static/img/flame.png" alt="Cartoonish flame" class="img-rounded">
+  </div>
+
+  <div class="col-md-6 col-md-offset-3 text-center">
+    <h1 id="project-title">pyLid: Pilot Light Tracker</h1>
+  </div>
+
+  <div class="col-md-2 col-md-offset-5 text-center">
+    {% if status %}
+    <p class="bg-success" id="light-status">The pilot light is on.</p>
+    {% else %}
+    <p class="bg-danger" id="light-status">The pilot light is out!</p>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href={{ url_for("static", filename="css/bootstrap.min.css") }}>
+    <link rel="stylesheet" href={{ url_for("static", filename="css/style.css") }}>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <script src={{ url_for("static", filename="js/bootstrap.min.js") }}/>
+    <script src={{ url_for("static", filename="js/jquery-1.12.3.min.js") }}/>
+  </body>
+</html>
